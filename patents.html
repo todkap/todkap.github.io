@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patents - Todd Kaplinger</title>
+<meta name="description" content="Selected patents by Todd Kaplinger, IBM Master Inventor, spanning cloud infrastructure, distributed systems, application platforms, mobile, and APIs.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Todd Kaplinger">
+<meta property="og:title" content="Patents | Todd Kaplinger">
+<meta property="og:description" content="IBM Master Inventor. Selected patents in distributed systems, application platforms, mobile, and APIs.">
+<meta property="og:image" content="https://todkap.github.io/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Todd Kaplinger. Architecture that ships. Agentic engineering. Systems. Teams.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Patents | Todd Kaplinger">
+<meta name="twitter:description" content="IBM Master Inventor. Selected patents in distributed systems, application platforms, mobile, and APIs.">
+<meta name="twitter:image" content="https://todkap.github.io/og.png">
+<meta name="twitter:image:alt" content="Todd Kaplinger. Architecture that ships. Agentic engineering. Systems. Teams.">
+<link rel="stylesheet" href="styles.css">
+<style>
+.patents .section-head h1 { font-size: clamp(1.7rem, 3.5vw, 2.3rem); letter-spacing: -0.01em; line-height: 1.2; }
+.patents .section-head .intro { max-width: 66ch; }
+.patents .section-head .cta-row { margin-top: 24px; }
+.patent-group + .patent-group { margin-top: 44px; }
+.patent-group h2 { font-size: 1.2rem; margin-bottom: 16px; color: var(--carolina-bright); }
+.patents .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.patents .card { min-width: 0; }
+.patents .card h3 { overflow-wrap: anywhere; }
+.patents .source-note { margin-top: 36px; color: var(--muted); font-size: 0.85rem; max-width: 80ch; }
+a:focus-visible { outline: 2px solid var(--carolina-bright); outline-offset: 5px; }
+@media (max-width: 760px) { .patents .cards { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Todd Kaplinger<span class="dot">.</span></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="patents.html" class="active" aria-current="page">Patents</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://github.com/todkap">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/toddkaplinger/">LinkedIn</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<section class="patents">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Patents</p>
+      <h1>Ideas, made explicit.</h1>
+      <p class="intro">I'm an IBM Master Inventor. Most of my patents came directly from product work at IBM, across mobile, cloud, web, and containers. These selected co-inventions cover some of that ground: caching, runtime behavior, virtual machines, and mobile APIs.</p>
+      <p class="intro">Different problems, a familiar thread: make the behavior explicit, then build a system that can act on it.</p>
+      <div class="cta-row">
+        <a class="btn ghost" href="https://patents.google.com/?inventor=Todd+Kaplinger">Browse the full Google Patents list</a>
+      </div>
+    </div>
+    <div class="patent-group">
+      <h2>Cloud infrastructure</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="date">Granted Apr 19, 2022</p>
+          <h3><a href="https://patents.google.com/patent/US11307886B2/en">Secure access to a virtual machine</a></h3>
+          <p>Establishes trust between a management appliance and a deployed virtual machine, letting users access it without another set of authentication credentials.</p>
+          <div class="meta">US11307886B2 &middot; IBM WebSphere CloudBurst Appliance</div>
+          <a class="more" href="https://patents.google.com/patent/US11307886B2/en">Read on Google Patents &rarr;</a>
+        </article>
+        <article class="card">
+          <p class="date">Granted Apr 16, 2013</p>
+          <h3><a href="https://patents.google.com/patent/US8424001B2/en">Virtual image deployment with a warm cache</a></h3>
+          <p>Packages a virtual machine with cached data that will still be valid at deployment, so the new instance can start with a warm cache rather than an empty one.</p>
+          <div class="meta">US8424001B2 &middot; IBM WebSphere eXtreme Scale</div>
+          <a class="more" href="https://patents.google.com/patent/US8424001B2/en">Read on Google Patents &rarr;</a>
+        </article>
+      </div>
+    </div>
+    <div class="patent-group">
+      <h2>Distributed systems &amp; caching</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="date">Granted Jan 17, 2023</p>
+          <h3><a href="https://patents.google.com/patent/US11556536B2/en">Autonomic caching for in memory data grid query processing</a></h3>
+          <p>Predicts related follow-up queries and starts them alongside the primary query, preparing data before the client asks for it.</p>
+          <div class="meta">US11556536B2 &middot; IBM WebSphere CloudBurst Appliance</div>
+          <a class="more" href="https://patents.google.com/patent/US11556536B2/en">Read on Google Patents &rarr;</a>
+        </article>
+        <article class="card">
+          <p class="date">Granted Dec 23, 2014</p>
+          <h3><a href="https://patents.google.com/patent/US8918602">Dynamically altering time to live values in a data cache</a></h3>
+          <p>Adjusts cache lifetimes using the cost of rebuilding data and an explicit tolerance for staleness, rather than a fixed timeout.</p>
+          <div class="meta">US8918602B2 &middot; IBM WebSphere CloudBurst Appliance</div>
+          <a class="more" href="https://patents.google.com/patent/US8918602">Read on Google Patents &rarr;</a>
+        </article>
+      </div>
+    </div>
+    <div class="patent-group">
+      <h2>Application platforms</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="date">Granted Jan 28, 2014</p>
+          <h3><a href="https://patents.google.com/patent/US8640094">Building optimized download modules leveraging modularized dependencies</a></h3>
+          <p>Builds a dependency map to select the resources an application module needs, avoiding unnecessary downloads.</p>
+          <div class="meta">US8640094B2 &middot; IBM Worklight</div>
+          <a class="more" href="https://patents.google.com/patent/US8640094">Read on Google Patents &rarr;</a>
+        </article>
+        <article class="card">
+          <p class="date">Granted Nov 10, 2015</p>
+          <h3><a href="https://patents.google.com/patent/US9183007">Dynamic determination of application server runtime classloading</a></h3>
+          <p>Uses compilation metadata to load generated code into the appropriate application-server container at runtime.</p>
+          <div class="meta">US9183007B2 &middot; IBM WebSphere Application Server</div>
+          <a class="more" href="https://patents.google.com/patent/US9183007">Read on Google Patents &rarr;</a>
+        </article>
+      </div>
+    </div>
+    <div class="patent-group">
+      <h2>Mobile &amp; APIs</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="date">Granted Nov 10, 2020</p>
+          <h3><a href="https://patents.google.com/patent/US10831858B2/en">Mobile enablement of existing web sites</a></h3>
+          <p>Separates static pages from dynamic data and packages them with REST calls as a mobile app, reusing an existing web application. The patent explicitly describes WebSphere customer sites as a use case.</p>
+          <div class="meta">US10831858B2 &middot; IBM WebSphere Application Server</div>
+          <a class="more" href="https://patents.google.com/patent/US10831858B2/en">Read on Google Patents &rarr;</a>
+        </article>
+        <article class="card">
+          <p class="date">Granted May 1, 2018</p>
+          <h3><a href="https://patents.google.com/patent/US9959363B2/en">Self-documentation for representational state transfer (REST) application programming interface (API)</a></h3>
+          <p>Turns observed JSON requests and responses into stored, self-documenting API data, grounding documentation in actual exchanges.</p>
+          <div class="meta">US9959363B2 &middot; IBM WebSphere Application Server</div>
+          <a class="more" href="https://patents.google.com/patent/US9959363B2/en">Read on Google Patents &rarr;</a>
+        </article>
+      </div>
+    </div>
+    <p class="source-note">Each selection links to its US grant record on Google Patents. Dates are grant dates, not filing dates. These are collaborative inventions; the full inventor lists and technical claims are in the linked records. Summaries describe the technical purpose, not measured product outcomes. The full search also includes applications and related filings.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/toddkaplinger/">LinkedIn</a></li>
+          <li><a href="https://github.com/todkap">GitHub</a></li>
+          <li><a href="mailto:todd.kaplinger@gmail.com">todd.kaplinger@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="patents.html">Patents</a></li>
+      <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Hand-built HTML and CSS. No frameworks, no tracking, nothing to maintain<span class="dot">.</span></p>
+  </div>
+</footer>
+
+</body>
+</html>
